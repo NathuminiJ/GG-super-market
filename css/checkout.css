@@ -1,0 +1,151 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container for the sections */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: solid 5px rgb(47, 198, 47);
+}
+
+/* Styles for the order summary table */
+#order-summary {
+    margin-bottom: 30px;
+    border: solid 5px rgb(47, 198, 47);
+}
+
+#order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#order-table th, 
+#order-table td {
+    padding: 10px;
+    text-align: left;
+    border: solid 3px rgb(47, 198, 47);
+}
+
+#order-table th {
+    background-color: #359a2b;
+    color: white;
+}
+
+#total-price {
+    font-weight: bold;
+    color: #b71d1d;
+}
+
+/* Styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: solid 3px rgb(47, 198, 47);
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color:  #359a2b;
+}
+
+/* Styles for the submit button */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #58e53cc5;
+    color: black;
+}
+
+/* Confirmation message */
+#confirmation-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #order-table th, 
+    #order-table td {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
